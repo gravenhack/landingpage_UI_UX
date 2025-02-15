@@ -127,57 +127,58 @@ nav {
 
 /* SECTIONS START */
 
+.section_title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+}
+section{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 0px;
+
+}
 .services{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows : 1fr 1fr;
-    margin-left: 100px;
-    margin-right: 100px;
-    justify-content: center;
-    align-items: center;
+    gap: 20px;
+    
 }
 
 .serv_dif1{
     grid-column: 1;
     grid-row: 1;
-    background-color: white;
-    width: 280px;
-    height: 252px;
-
+    background-color: rgb(255, 255, 255);
+    
     
 }
 .serv_dif2{
     grid-column: 2;
     grid-row: 1;
     background-color: white;
-    width: 280px;
-    height: 252px;
 
 }
 .serv_dif3{
     grid-column: 3;
     grid-row: 1;
     background-color: white;
-    width: 280px;
-    height: 252px;
 
 }
 .serv_dif4{
     grid-column: 4;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: span 2;
     background-color: white;
-    width: 280px;
-    height: 536px;
 
 }
 .serv_dif5{
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: span 2;
     grid-row: 2;
-    background-color: rgb(255, 255, 255);
-    width: 592px;
-    height: 252px;
+    background-color: rgb(255, 255, 255);  
+    display: flex; 
+    position: relative;
 
 }
 .serv_dif6{
@@ -186,6 +187,52 @@ nav {
     background-color: white;
 
 }
+.logo_webflow{
+    background-color: #5B54FF;
+    width: 218px;
+    height: 214px;
+    border-radius: 5px;
+    position: absolute;
+    top: 19px;
+    left: 355px;
+    right: 19px;
+    bottom: 19px;
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+}
+.services div .icn_srv{
+    padding: 12px;
+    background-color: #F5F8FF;
+    width: 44px;
+    height: 44px;
+    border-radius: 9px;
+    
+}
+
+.serv_dif1, .serv_dif2, .serv_dif3, .serv_dif4,.serv_dif5,.serv_dif6{
+    padding: 23px;
+    border-radius: 10px;
+}
+.serv_dif1, .serv_dif2, .serv_dif3, .serv_dif6{
+    width: 280px;
+    height: 252px;
+}
+.serv_dif4{
+    width: 280px;
+    height: 536px;
+    padding-right: 20px;
+}
+.serv_dif4 .serv_dif4_img{
+    width: 238px;
+    height: 257px;
+}
+.serv_dif5{
+    width: 592px;
+    height: 252px;
+}
+
+
 
 
 
